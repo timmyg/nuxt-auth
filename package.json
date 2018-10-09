@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-auth0-boilerplate",
+  "version": "1.0.0",
+  "description": "VueJS Nuxt Boilerplate with Auth0",
+  "author": "Tim",
+  "private": true,
+  "scripts": {
+    "start": "nuxt",
+    "build:prod": "nuxt build",
+    "start:prod": "nuxt start",
+    "generate:static": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0",
+    "bootstrap-vue": "^1.0.2",
+    "bootstrap": "^4.0.0-beta.2",
+    "@nuxtjs/axios": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
