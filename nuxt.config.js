@@ -45,7 +45,8 @@ module.exports = {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     '@nuxtjs/auth',
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/proxy'
   ],
   router: {
     middleware: ['auth'] // require auth on all pages (can disable per route: https://auth.nuxtjs.org/getting-started/middleware)
@@ -68,9 +69,27 @@ module.exports = {
   /*
   ** Axios module configuration
   */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
+  // axios: {
+  //   // See https://github.com/nuxt-community/axios-module#options
+  //   proxy: true
+  // },
+
+  // proxy: [
+  //   'http://example.com:8000/.netlify/functions/*',
+  // //   '/.netlify/**': '/.netlify44/**',
+  // //   // pathRewrite: { '^/api' : '/api/v1' }
+  // //   // pathRewrite: { '^/.netlify/functions': 'http://localhost:9000/' }
+  // //   // '^/.netlify/functions/*', 'http://localhost:9000/'
+  // //   // '^/.netlify/functions/*': 'http://example.com',
+  // //   // '/.netlify/functions/hello': {
+  // //   //   target: 'http://localhost:9000/hello',
+  // //   //   pathRewrite: {'^/api/': ''}
+  // //   // }
+  // ],
+  // proxy: {
+  //   '/api/': 'http://api.example.com',
+  //   '/api2/': 'http://api.another-website.com'
+  // },
 
   /*
   ** Build configuration

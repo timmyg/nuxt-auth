@@ -1,0 +1,7 @@
+[Settings]
+ID = "nuxt-auth0"
+
+[build]
+  command = "npm run generate:static"
+  publish = "dist"
+  functions = "functions"

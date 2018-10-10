@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "start": "nuxt",
+    "start:serverless": "netlify-lambda serve .",
     "build:prod": "nuxt build",
     "start:prod": "nuxt start",
     "generate:static": "nuxt generate",
@@ -16,11 +17,13 @@
     "@nuxtjs/auth": "^4.5.2",
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/dotenv": "^1.1.1",
+    "@nuxtjs/proxy": "^1.2.4",
     "auth0-lock": "^11.10.0",
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-vue": "^1.0.2",
     "js-cookie": "^2.2.0",
     "jwt-decode": "^2.2.0",
+    "netlify-lambda": "^0.4.0",
     "nuxt": "^1.0.0",
     "uuid": "^3.3.2"
   },
