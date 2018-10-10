@@ -19,6 +19,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
+  // auth: true,
   computed: mapGetters([
     'isAuthenticated',
     'loggedUser'

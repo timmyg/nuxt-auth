@@ -48,15 +48,15 @@ module.exports = {
     '@nuxtjs/dotenv'
   ],
   router: {
-    middleware: ['auth']
+    // middleware: ['auth']
   },
   auth: {
     // Options
     redirect: {
       login: '/auth/login', // User will be redirected to this path if login is required
       logout: '/', //  User will be redirected to this path if after logout, current route is protected
-      callback: '/hello', // User will be redirect to this path by the identity provider after login
-      user: '/'
+      callback: '/auth/logged-in', // User will be redirect to this path by the identity provider after login
+      home: '/hello'
     },
     strategies: {
       auth0: {
