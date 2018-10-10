@@ -1,4 +1,5 @@
 const pkg = require('./package')
+require('dotenv').config()
 
 module.exports = {
   mode: 'spa',
@@ -42,8 +43,28 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/auth',
+    '@nuxtjs/dotenv'
   ],
+  router: {
+    middleware: ['auth']
+  },
+  auth: {
+    // Options
+    redirect: {
+      login: '/login', // User will be redirected to this path if login is required
+      logout: '/', //  User will be redirected to this path if after logout, current route is protected
+      callback: '/hello', // User will be redirect to this path by the identity provider after login
+      user: '/'
+    },
+    strategies: {
+      auth0: {
+        domain: process.env.AUTH0_CLIENT_DOMAIN,
+        client_id: process.env.AUTH0_CLIENT_ID
+      }
+    }
+  },
   /*
   ** Axios module configuration
   */
