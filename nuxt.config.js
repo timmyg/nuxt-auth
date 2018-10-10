@@ -48,7 +48,7 @@ module.exports = {
     '@nuxtjs/dotenv'
   ],
   router: {
-    // middleware: ['auth']
+    middleware: ['auth'] // require auth on all pages (can disable per route: https://auth.nuxtjs.org/getting-started/middleware)
   },
   auth: {
     // Options
