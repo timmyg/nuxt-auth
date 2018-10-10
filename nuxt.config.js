@@ -53,7 +53,7 @@ module.exports = {
   auth: {
     // Options
     redirect: {
-      login: '/login', // User will be redirected to this path if login is required
+      login: '/auth/login', // User will be redirected to this path if login is required
       logout: '/', //  User will be redirected to this path if after logout, current route is protected
       callback: '/hello', // User will be redirect to this path by the identity provider after login
       user: '/'
