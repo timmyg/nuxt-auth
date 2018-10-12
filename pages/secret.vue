@@ -1,9 +1,11 @@
 <template>
   <div>
     <div class="content">
-      <p>You should only see this secret page if you are logged in</p>
-      <p><button @click="callServerless">Get Message from serverless backend</button></p>
-      <p v-if="msg">response: {{ msg }}</p>
+      <p>You can only see this secret page if you are logged in</p>
+      <b-button variant="success" @click="callServerless">get message from serverless backend</b-button>
+      <br>
+      <br>
+      <pre v-if="response">{{ response | pretty }}</pre>
     </div>
   </div>
 </template>
@@ -11,12 +13,13 @@
 <script>
   export default {
     data() {
-      return { msg: "" }
+      return { response: null }
     },
     methods: {
       async callServerless() {
-        const res = await this.$axios.$get('http://localhost:9000' + '/hello')
-        this.msg = res.msg
+        const response = await this.$axios.$get('/hello')
+        console.log({response})
+        this.response = response
       }
     }
   }

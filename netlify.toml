@@ -1,5 +1,5 @@
 [Settings]
-ID = "nuxt-auth0"
+ID = "nuxt-auth"
 
 [build]
   command = "npm run generate:static"

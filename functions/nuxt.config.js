@@ -130,10 +130,12 @@ module.exports = {
   /*
   ** Axios module configuration
   */
-  // axios: {
-  //   // See https://github.com/nuxt-community/axios-module#options
-  //   proxy: true
-  // },
+  axios: {
+    //   // See https://github.com/nuxt-community/axios-module#options
+    //   proxy: true
+    baseURL: 'http://localhost:9000'
+    // credentials: true
+  },
 
   // proxy: [
   //   'http://example.com:8000/.netlify/functions/*',

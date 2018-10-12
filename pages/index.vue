@@ -1,16 +1,9 @@
 <template>
   <section class="container">
     <div>
-      <h1 class="title">
-        nuxt-auth0-boilerplate
-      </h1>
       <h2 class="subtitle">
-        VueJS Nuxt Boilerplate with Auth0
+        VueJS Nuxt Boilerplate with Auth
       </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
     </div>
   </section>
 </template>

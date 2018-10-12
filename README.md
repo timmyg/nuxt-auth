@@ -1,6 +1,6 @@
-# nuxt-auth0-boilerplate
+# nuxt-auth-boilerplate
 
-> VueJS Nuxt Boilerplate with Auth0
+> VueJS Nuxt Boilerplate with Auth
 
 ## Build Setup
 

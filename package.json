@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-auth0",
+  "name": "nuxt-auth",
   "version": "1.0.0",
-  "description": "VueJS Nuxt Boilerplate with Auth0",
+  "description": "VueJS Nuxt Boilerplate with Auth",
   "author": "Tim",
   "private": true,
   "scripts": {

@@ -7,7 +7,7 @@
                     <b-nav-item to="/">
                         <span class="text-brand name">my app</span>
                     </b-nav-item>
-                    <b-nav-item to="/hello">welcome</b-nav-item>
+                    <b-nav-item to="/hello">hello</b-nav-item>
                 </b-navbar-nav>
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item v-if="!isAuthenticated" to="/auth/login" right>Sign in</b-nav-item>                     
